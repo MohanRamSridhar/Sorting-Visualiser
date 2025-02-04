@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        
+        <div>
+            <label for="arrayInput">Enter numbers (comma-separated):</label>
+            <input type="text" id="arrayInput" placeholder="e.g., 5, 2, 9, 1">
+            <button onclick="generateArray()">Generate Array</button>
+        </div>
+        
+        <div>
+            <label for="algorithm">Choose Sorting Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+            </select>
+            <button onclick="startSorting()">Start Sorting</button>
+        </div>
+        
+        <div id="arrayBars" class="array-bars"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
